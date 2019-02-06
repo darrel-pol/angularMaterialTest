@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyCj0qmtZ71ooJUeIZlekmUx4Y3HfkXPAyQ',
+    authDomain: 'ng-fitness-tracker-d782f.firebaseapp.com',
+    databaseURL: 'https://ng-fitness-tracker-d782f.firebaseio.com',
+    projectId: 'ng-fitness-tracker-d782f',
+    storageBucket: 'ng-fitness-tracker-d782f.appspot.com',
+    messagingSenderId: '439906719242'
+  }
 };
 
 /*
@@ -14,3 +22,4 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
