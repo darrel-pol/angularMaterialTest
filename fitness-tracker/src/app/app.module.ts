@@ -17,6 +17,8 @@ import {  FirestoreSettingsToken, AngularFirestoreModule } from "@angular/fire/f
 import { UIService } from './shared/ui.service';
 import { AuthModule } from './auth/auth.module';
 import { TrainingModule } from './training/training/training.module';
+import { StoreModule } from '@ngrx/store';
+import { reducers } from './app.reducer';
 
 
 @NgModule({
@@ -37,7 +39,8 @@ import { TrainingModule } from './training/training/training.module';
     AngularFireModule.initializeApp(environment.firebase),
     AuthModule,
     AngularFirestoreModule,
-    TrainingModule
+    TrainingModule,
+    StoreModule.forRoot(reducers)
   ],
   providers: [
     AuthService, 
